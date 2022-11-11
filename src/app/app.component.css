@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container app-input,
+app-display,
+app-input2,
+app-display2 {
+    width: 50%;
+    margin: 1em;
+    padding: 1em
+}

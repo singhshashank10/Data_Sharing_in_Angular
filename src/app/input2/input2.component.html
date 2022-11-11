@@ -1,0 +1,14 @@
+<div class="inBox">
+    <div>
+        <h1>First Component</h1>
+        <p>Here the data sharing is done with the help of Services. First the input is given to the variable iin the
+            service throug the 'setvalue' function. This storage of data is done when we click event occur on the button
+        </p>
+    </div>
+    <div>
+        <input type="text" #Input placeholder="Write Something here">
+    </div>
+    <div>
+        <button (click)="inputFun(Input.value)">Click here to save data</button>
+    </div>
+</div>

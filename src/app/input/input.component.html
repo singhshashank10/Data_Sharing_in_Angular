@@ -1,0 +1,13 @@
+<div class="inBox">
+    <div>
+        <h1>First Component</h1>
+        <p>Componante name 'input'. This component takes the input from the user. This input is then share this data
+            though EventEmitter to the app component. This is the output side of the data sharing</p>
+    </div>
+    <div>
+        <input type="text" #Input placeholder="Write Something here">
+    </div>
+    <div>
+        <button (click)="inputFun(Input.value)">Click Here to Display</button>
+    </div>
+</div>
