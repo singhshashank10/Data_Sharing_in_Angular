@@ -1,11 +1,14 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataSharingService {
-  value: string = ''
   constructor() { }
+  value: string = '';
+  subjectValue: BehaviorSubject<string> = new BehaviorSubject<string>('')
+
 
   setValue(value: string) {
     this.value = value;
@@ -15,4 +18,7 @@ export class DataSharingService {
     return this.value;
   }
 
+  setBehaviorSuubject(value: string) {
+    this.subjectValue.next(value);
+  }
 }

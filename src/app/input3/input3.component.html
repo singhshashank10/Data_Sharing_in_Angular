@@ -1,0 +1,13 @@
+<div class="inBox">
+    <div>
+        <h1>First Component</h1>
+        <p>Here data is shared from the Behavior Subject method. which is defined in the services.
+        </p>
+    </div>
+    <div>
+        <input type="text" #Input placeholder="Write Something here">
+    </div>
+    <div>
+        <button (click)="inputFun(Input.value)">Click here to save data</button>
+    </div>
+</div>

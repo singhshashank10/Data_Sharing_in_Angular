@@ -6,7 +6,9 @@
 .container app-input,
 app-display,
 app-input2,
-app-display2 {
+app-display2,
+app-input3,
+app-display3 {
     width: 50%;
     margin: 1em;
     padding: 1em
