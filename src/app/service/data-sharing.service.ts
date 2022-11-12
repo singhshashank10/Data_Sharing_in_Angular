@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -14,8 +14,8 @@ export class DataSharingService {
     this.value = value;
   }
 
-  getValue() {
-    return this.value;
+  public getValue(): Observable<string> {
+    return of(this.value);
   }
 
   setBehaviorSuubject(value: string) {

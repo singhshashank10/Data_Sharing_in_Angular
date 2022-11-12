@@ -4,7 +4,7 @@ import { DataSharingService } from '../service/data-sharing.service';
 @Component({
   selector: 'app-display3',
   templateUrl: './display3.component.html',
-  styleUrls: ['./display3.component.css']
+  styleUrls: ['../app.component.css']
 })
 export class Display3Component implements OnInit {
 

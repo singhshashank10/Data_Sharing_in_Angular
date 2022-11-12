@@ -3,9 +3,11 @@
     <p>
         Here the value which is stored by the first component in the sevice is fetched from the service and shown in the
         second component. Unlike the input output sharing, here details or value is fetched only when we will click the
-        button. On clicking the button 'setValue' function get called which returns the value, which is then displayed
+        button. On clicking the 'Click here to display' button 'getValue' function is called from service which returns
+        the value,
+        which is then displayed
         in this component
     </p>
-    <P>The input is : <span>{{value}}</span> </P>
+    <b>The input is : <span>{{value}}</span> </b> <br><br>
     <button (click)="displayFun()">Click here to display</button>
 </div>

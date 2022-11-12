@@ -4,7 +4,7 @@ import { DataSharingService } from '../service/data-sharing.service';
 @Component({
   selector: 'app-input3',
   templateUrl: './input3.component.html',
-  styleUrls: ['./input3.component.css']
+  styleUrls: ['../app.component.css']
 })
 export class Input3Component implements OnInit {
 

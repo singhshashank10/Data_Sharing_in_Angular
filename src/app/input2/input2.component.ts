@@ -4,7 +4,7 @@ import { DataSharingService } from '../service/data-sharing.service';
 @Component({
   selector: 'app-input2',
   templateUrl: './input2.component.html',
-  styleUrls: ['./input2.component.css']
+  styleUrls: ['../app.component.css']
 })
 export class Input2Component implements OnInit {
   constructor(
