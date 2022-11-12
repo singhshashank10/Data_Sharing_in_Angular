@@ -5,9 +5,6 @@
             though EventEmitter to the app component. This is the output side of the data sharing</p>
     </div>
     <div>
-        <input type="text" #Input placeholder="Write Something here">
-    </div>
-    <div>
-        <button (click)="inputFun(Input.value)">Click Here to Display</button>
+        <input type="text" #Input (keyup)="inputFun(Input.value)" placeholder="Write Something here">
     </div>
 </div>

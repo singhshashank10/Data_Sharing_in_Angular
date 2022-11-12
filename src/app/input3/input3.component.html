@@ -5,9 +5,6 @@
         </p>
     </div>
     <div>
-        <input type="text" #Input placeholder="Write Something here">
-    </div>
-    <div>
-        <button (click)="inputFun(Input.value)">Click here to save data</button>
+        <input type="text" #Input (keyup)="inputFun(Input.value)" placeholder="Write Something here">
     </div>
 </div>
